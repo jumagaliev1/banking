@@ -1,0 +1,3 @@
+Index page
+<br>
+${PageTitle}
