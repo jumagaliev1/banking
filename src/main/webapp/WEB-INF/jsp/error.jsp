@@ -29,36 +29,36 @@
 </head>
 <body class="d-flex align-items-center justify-content-center">
 
-<!-- Card: Error Card -->
-<div class="card col-4 alert alert-danger border border-danger text-danger">
-    <!-- Card Title -->
-    <h3 class="card-title">
-        <i class="fa fa-window-close me-2"></i>Errors:
-    </h3>
-    <!-- End Of Card Title -->
-    <hr>
-    <!-- Card Body -->
-    <div class="card-body">
-        <!-- Card Text -->
-        <p class="card-text">
+    <!-- Card: Error Card -->
+    <div class="card col-4 alert alert-danger border border-danger text-danger">
+        <!-- Card Title -->
+        <h3 class="card-title">
+            <i class="fa fa-window-close me-2"></i>Errors:
+        </h3>
+        <!-- End Of Card Title -->
+        <hr>
+        <!-- Card Body -->
+        <div class="card-body">
+            <!-- Card Text -->
+            <p class="card-text">
             <!-- Display Message -->
             <c:if test="${requestScope.error != null}">
-        <div class="alert alert-danger text-center border border-danger">
-            <b>${requestScope.error}</b>
+                <div class="alert alert-danger text-center border border-danger">
+                    <b>${requestScope.error}</b>
+                </div>
+            </c:if>
+            <!-- End Of Display Message -->
+            </p>
+            <!-- End Of Card Text -->
+            <hr>
+            <!-- Back To Login Page -->
+            <a href="/login" class="btn btn-sm btn-danger">
+                <i class="fa fa-arrow-alt-circle-left me-1"></i> Back
+            </a>
+            <!-- End Of Back To Login Page -->
         </div>
-        </c:if>
-        <!-- End Of Display Message -->
-        </p>
-        <!-- End Of Card Text -->
-        <hr>
-        <!-- Back To Login Page -->
-        <a href="/login" class="btn btn-sm btn-danger">
-            <i class="fa fa-arrow-alt-circle-left me-1"></i> Back
-        </a>
-        <!-- End Of Back To Login Page -->
+        <!-- End Of Card Body -->
     </div>
-    <!-- End Of Card Body -->
-</div>
-<!-- End Of Card: Error Card -->
+    <!-- End Of Card: Error Card -->
 </body>
 </html>
